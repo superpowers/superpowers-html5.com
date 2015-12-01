@@ -2,16 +2,37 @@ main {
   display: flex;
   flex-flow: column;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   text-align: center;
 }
 main .logo {
   padding: 1em;
+  background: url("https://sparklinlabs.com/images/artwork.png") center bottom no-repeat;
+  background-size: 75%;
+  height: 520px;
+  min-height: calc(350px - 2em);
+  max-height: 40vw;
 }
 main .logo h1 {
   margin: 0;
   font-size: 5em;
   font-weight: bold;
+  font-family: "Lato";
+}
+main .screenshots {
+  margin: 1em 0;
+  padding: 1em;
+  background: #ddd;
+}
+main .screenshots > div {
+  display: flex;
+  text-align: left;
+}
+main .screenshots .info {
+  padding: 0 1em;
+}
+main .screenshots .info header {
+  font-size: 1.5em;
 }
 main .aspects {
   display: flex;
@@ -27,26 +48,21 @@ main .aspects > div img {
 main .aspects > div .text {
   text-align: center;
 }
-main .screenshots {
-  margin: 2em 0;
-  padding: 1em;
-  background: #ddd;
-}
-main .screenshots > div {
-  display: flex;
-  text-align: left;
-}
-main .screenshots .info {
-  padding: 0 1em;
-}
-main .screenshots .info header {
-  font-size: 1.5em;
-}
 @media (max-width: 1000px) {
+  main .logo {
+    font-size: 0.75em;
+  }
   main .aspects {
     padding: 0 5vw;
   }
   main .screenshots > div {
     flex-flow: column;
+  }
+  main .screenshots > div img {
+    width: calc(100% - 1em);
+    height: auto;
+  }
+  main .screenshots .info {
+    padding: 1em 0;
   }
 }
