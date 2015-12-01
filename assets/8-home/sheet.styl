@@ -2,37 +2,31 @@ main {
   display: flex;
   flex-flow: column;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   text-align: center;
 }
 
 main .logo {
   padding: 1em;
-  
+  background: url(https://sparklinlabs.com/images/artwork.png) center bottom no-repeat;
+  background-size: 75%;
+  height: 520px;
+  min-height: calc(350px - 2em);
+  max-height: 40vw;
+
   h1 {
     margin: 0;
     font-size: 5em;
     font-weight: bold;
+    font-family: "Lato";
   }
   
   .tagline {
   }
 }
 
-main .aspects {
-  display: flex;
-  padding: 0 10vw;
-  align-items: baseline;
-  
-  > div {
-    flex: 1;
-    img { width: 100%; }
-    .text { text-align: center; }
-  }
-}
-
 main .screenshots {
-  margin: 2em 0;
+  margin: 1em 0;
   padding: 1em;
   background: #ddd;
   
@@ -50,12 +44,33 @@ main .screenshots {
   }
 }
 
+main .aspects {
+  display: flex;
+  padding: 0 10vw;
+  align-items: baseline;
+  
+  > div {
+    flex: 1;
+    img { width: 100%; }
+    .text { text-align: center; }
+  }
+}
+
 @media (max-width: 1000px) {
+  main .logo {
+    font-size: 0.75em;
+  }
+  
   main .aspects {
     padding: 0 5vw;
   }
   
   main .screenshots > div {
     flex-flow: column;
+    img { width: calc(100% - 1em); height: auto; }
+  }
+  
+  main .screenshots .info {
+    padding: 1em 0;
   }
 }
