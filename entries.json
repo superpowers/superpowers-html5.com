@@ -1,0 +1,47 @@
+[
+  {
+    "id": "3",
+    "name": "layout",
+    "type": null,
+    "children": [
+      {
+        "id": "7",
+        "name": "main",
+        "type": "stylus"
+      },
+      {
+        "id": "0",
+        "name": "index",
+        "type": "jade"
+      },
+      {
+        "id": "2",
+        "name": "menu",
+        "type": "jade"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "home",
+    "type": "stylus"
+  },
+  {
+    "id": "1",
+    "name": "index",
+    "type": "jade"
+  },
+  {
+    "id": "5",
+    "name": "locales",
+    "type": null,
+    "children": [
+      {
+        "id": "6",
+        "name": "en",
+        "type": null,
+        "children": []
+      }
+    ]
+  }
+]
