@@ -19,19 +19,26 @@ main .logo h1 {
   font-weight: bold;
   font-family: "Lato";
 }
-main .screenshots {
+main .slides {
   margin: 1em 0;
-  padding: 1em;
   background: #ddd;
+  display: flex;
+  align-items: stretch;
 }
-main .screenshots > div {
+main .slides .previous,
+main .slides .next {
+  background: #ccc;
+}
+main .slides .slide:not([hidden]) {
+  padding: 1em;
+  flex: 1;
   display: flex;
   text-align: left;
 }
-main .screenshots .info {
+main .slides .info {
   padding: 0 1em;
 }
-main .screenshots .info header {
+main .slides .info header {
   font-size: 1.5em;
 }
 main .aspects {
@@ -48,6 +55,13 @@ main .aspects > div img {
 main .aspects > div .text {
   text-align: center;
 }
+main .news {
+  text-align: left;
+  padding: 1em;
+}
+main .news article header {
+  background: #fff;
+}
 @media (max-width: 1000px) {
   main .logo {
     font-size: 0.75em;
@@ -55,14 +69,14 @@ main .aspects > div .text {
   main .aspects {
     padding: 0 5vw;
   }
-  main .screenshots > div {
+  main .slides .slide {
     flex-flow: column;
   }
-  main .screenshots > div img {
+  main .slides .slide img {
     width: calc(100% - 1em);
     height: auto;
   }
-  main .screenshots .info {
+  main .slides .info {
     padding: 1em 0;
   }
 }
