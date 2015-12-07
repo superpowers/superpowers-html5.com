@@ -25,12 +25,19 @@ main .logo {
   }
 }
 
-main .screenshots {
+main .slides {
   margin: 1em 0;
-  padding: 1em;
   background: #ddd;
+  display: flex;
+  align-items: stretch;
   
-  > div {
+  .previous, .next {
+    background: #ccc;
+  }
+  
+  .slide:not([hidden]) {
+    padding: 1em;
+    flex: 1;
     display: flex;
     text-align: left;
   }
@@ -56,6 +63,15 @@ main .aspects {
   }
 }
 
+main .news {
+  text-align: left;
+  padding: 1em;
+  
+  article header {
+    background: #fff;
+  }
+}
+
 @media (max-width: 1000px) {
   main .logo {
     font-size: 0.75em;
@@ -65,12 +81,12 @@ main .aspects {
     padding: 0 5vw;
   }
   
-  main .screenshots > div {
+  main .slides .slide {
     flex-flow: column;
     img { width: calc(100% - 1em); height: auto; }
   }
   
-  main .screenshots .info {
+  main .slides .info {
     padding: 1em 0;
   }
 }

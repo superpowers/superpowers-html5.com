@@ -23,12 +23,12 @@
   },
   {
     "id": "8",
-    "name": "home",
+    "name": "index.styl",
     "type": "stylus"
   },
   {
     "id": "1",
-    "name": "index",
+    "name": "index.jade",
     "type": "jade"
   },
   {

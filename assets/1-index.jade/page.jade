@@ -1,18 +1,20 @@
 extends layout/index
 
 block head
-  link(rel="stylesheet",href="home.css")
+  link(rel="stylesheet",href="index.css")
 
 block content
   .logo
     h1 Superpowers
-    .tagline 2D+3D game making for indie game makers. Free and open source, <b>finally</b>.
+    .tagline 2D+3D game making for indies. Free and open source, <b>finally</b>.
   
-  .screenshots
-    p Coming very soon! ♥
+  .slides
+    p(style="flex: 1;") Coming <b>January 7, 2016</b>. <a href="https://sparklinlabs.us10.list-manage.com/subscribe/?u=112738380d07db71177353aac&id=8de36d77b7" target="_blank">Subscribe to be notified!</a>
   
-  // .screenshots
-    div
+  // .slides
+    .previous PREVIOUS
+
+    .slide
       img(src="http://i.imgur.com/g4iNlEn.png",width="672",height="420")
       .info
         header Working in the Superpowers app
@@ -25,10 +27,17 @@ block content
         p.
           The API browser lists every namespace, class and function made available
           to you by the various plugins installed on your server.
-    //
-      Export to any platform + Your Superpowers project in the browser!
-      Support us on Patreon
-      Demos
+
+    .slide(hidden)
+      img(src="http://i.imgur.com/g4iNlEn.png",width="672",height="420")
+      .info
+        header ...
+        
+        p Export to any platform + Your Superpowers project in the browser!
+        p Support us on Patreon
+        p Demos
+
+    .next NEXT
 
   .aspects
     div
@@ -43,8 +52,20 @@ block content
       img(src="http://i.imgur.com/KYc3g9p.png")
       .text Powered by TypeScript
 
-  // .news
+  //.news
     h1 NEWS
+    
+    article
+      header Ludum Dare this week-end!
+      p.
+        <a href="http://ludumdare.com/compo/" target="_blank">Ludum Dare</a> runs from December 11th to 14th.
+        Sparklin Labs will be taking part and livestreaming at hitbox.tv/SparklinLabs.
+
+      p.
+        Looking for a team to jam with? Check out <a href="http://itch.io/t/10105/team-up-for-ludum-dare-34" target="_blank">the Team up thread on itch.io</a>
+    
+    article
+      header Superpowers is finally open source!
   
 
   // .asset-pack-previews
