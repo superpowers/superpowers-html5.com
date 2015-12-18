@@ -32,6 +32,62 @@
     "type": "jade"
   },
   {
+    "id": "11",
+    "name": "images",
+    "type": null,
+    "children": [
+      {
+        "id": "14",
+        "name": "superpowers-logo",
+        "type": "blob"
+      },
+      {
+        "id": "13",
+        "name": "sparklin-labs-small",
+        "type": "blob"
+      },
+      {
+        "id": "15",
+        "name": "artworks",
+        "type": null,
+        "children": [
+          {
+            "id": "12",
+            "name": "cover",
+            "type": "blob"
+          },
+          {
+            "id": "16",
+            "name": "theater",
+            "type": "blob"
+          },
+          {
+            "id": "17",
+            "name": "tools",
+            "type": "blob"
+          },
+          {
+            "id": "18",
+            "name": "movie-set",
+            "type": "blob"
+          }
+        ]
+      },
+      {
+        "id": "19",
+        "name": "screenshots",
+        "type": null,
+        "children": [
+          {
+            "id": "20",
+            "name": "residence-gudul",
+            "type": "blob"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "5",
     "name": "locales",
     "type": null,
