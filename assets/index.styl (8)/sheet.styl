@@ -28,7 +28,7 @@ main .logo {
 main .news {
   background: #ddd;
   text-align: center;
-  padding: 2em 0;
+  padding: 2em;
   
   h1 { margin-top: 0; }
   
@@ -56,66 +56,52 @@ main .aspects {
   }
 }
 
-main .slides {
-  margin: 1em 0;
+main .features-toggle {
+  margin-top: 1em;
   background: #ddd;
+  padding: 1em;
+}
+
+main .features {
+  margin-bottom: 1em;
+  background: #ddd;
+
   display: flex;
-  flex-flow: column;
   align-items: stretch;
-  position: relative;
-  
-  .controls {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0.5em;
-    font-size: 0.75em;
-    line-height: 1;
-  }
-  
-  .controls button {
-    border: 1px solid #bbb;
-    background: #eee;
-    color: #666;
-    padding: 0.5em 0.75em;
-    margin-left: 0.5em;
-    font-size: inherit;
-    cursor: pointer;
-    
-    &:hover { background: #fff; }
-  }
-  
-  .slide:not([hidden]) {
-    padding: 1em;
-    flex: 1;
+
+  a.control {
     display: flex;
-    text-align: left;
+    align-items: center;
+    justify-content: center;
+    width: 1.5em;
+    font-size: 3.5em;
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.5;
+    background: #d0d0d0;
   }
-  
-  .info {
-    padding: 0 1em;
-  }
-  
-  .info header {
-    font-size: 1.5em;
-  }
+  a.control:hover { opacity: 1; cursor: pointer; background: #ccc; }
+  a.control:active { background: #666; color: #ccc; }
+
+  .spotlight { flex: 1; padding: 1em; }
+  .spotlight h1 { line-height: 1.5; margin-top: 0; }
+  .spotlight h1 .number { font-size: 0.5em; padding-left: 0.5em; color: #888; font-weight: normal; white-space: nowrap; vertical-align: middle; }
+  .spotlight img { max-width: 90%; }
 }
 
 @media (max-width: 1000px) {
-  main .logo {
-    font-size: 0.75em;
-  }
-  
-  main .aspects {
-    padding: 0 5vw;
-  }
+  main .logo { font-size: 0.75em; }
+  main .aspects { padding: 1em 5vw; }
   
   main .slides .slide {
     flex-flow: column;
     img { width: calc(100% - 1em); height: auto; }
   }
   
-  main .slides .info {
-    padding: 1em 0;
-  }
+  main .slides .info { padding: 1em 0; }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  main .logo .tagline { font-size: 1.75em; }
+  main .news table { font-size: 1.5em; }
 }

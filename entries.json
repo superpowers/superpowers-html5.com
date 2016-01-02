@@ -6,17 +6,42 @@
     "children": [
       {
         "id": "7",
-        "name": "main",
+        "name": "main.styl",
         "type": "stylus"
       },
       {
         "id": "0",
-        "name": "index",
+        "name": "main.en.jade",
+        "type": "jade"
+      },
+      {
+        "id": "35",
+        "name": "main.fr.jade",
         "type": "jade"
       },
       {
         "id": "2",
-        "name": "menu",
+        "name": "menu.en",
+        "type": "jade"
+      },
+      {
+        "id": "37",
+        "name": "menu.fr",
+        "type": "jade"
+      },
+      {
+        "id": "34",
+        "name": "footer.en",
+        "type": "jade"
+      },
+      {
+        "id": "36",
+        "name": "footer.fr",
+        "type": "jade"
+      },
+      {
+        "id": "32",
+        "name": "slideshow",
         "type": "jade"
       }
     ]
@@ -27,8 +52,28 @@
     "type": "stylus"
   },
   {
-    "id": "1",
+    "id": "22",
     "name": "index.jade",
+    "type": "jade"
+  },
+  {
+    "id": "1",
+    "name": "index.en",
+    "type": "jade"
+  },
+  {
+    "id": "26",
+    "name": "features.en",
+    "type": "jade"
+  },
+  {
+    "id": "23",
+    "name": "index.fr",
+    "type": "jade"
+  },
+  {
+    "id": "33",
+    "name": "features.fr",
     "type": "jade"
   },
   {
@@ -75,28 +120,40 @@
       },
       {
         "id": "19",
-        "name": "screenshots",
+        "name": "slides",
         "type": null,
         "children": [
           {
             "id": "20",
-            "name": "residence-gudul",
+            "name": "tabbed-ui",
+            "type": "blob"
+          },
+          {
+            "id": "27",
+            "name": "typescript-editor",
+            "type": "blob"
+          },
+          {
+            "id": "28",
+            "name": "asset-packs",
+            "type": "blob"
+          },
+          {
+            "id": "29",
+            "name": "publish",
+            "type": "blob"
+          },
+          {
+            "id": "31",
+            "name": "demo-projects",
+            "type": "blob"
+          },
+          {
+            "id": "30",
+            "name": "support-us",
             "type": "blob"
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "5",
-    "name": "locales",
-    "type": null,
-    "children": [
-      {
-        "id": "6",
-        "name": "en",
-        "type": null,
-        "children": []
       }
     ]
   }

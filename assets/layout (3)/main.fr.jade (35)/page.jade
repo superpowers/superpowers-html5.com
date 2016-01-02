@@ -10,14 +10,10 @@ html
   body
     .page
       nav
-        include menu
+        include menu.fr.jade
 
       main
         block content
 
       footer
-        img(src="images/sparklin-labs-small.png")
-        .text
-          | Championed by <a href="http://sparklinlabs.com/" target="_blank">Sparklin Labs</a>
-          br
-          | built with the community
+        include footer.fr.jade

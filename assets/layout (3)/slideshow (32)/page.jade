@@ -1,0 +1,29 @@
+script.
+  var slides = document.querySelectorAll(".features .feature");
+  for (var i = 0; i < slides.length; i++) {
+    var numberElt = document.createElement("span");
+    numberElt.className = "number";
+    numberElt.textContent = "(" + (i + 1) + " / " + slides.length + ")";
+    slides[i].querySelector("h1").appendChild(numberElt);
+  }
+
+  function setupSlide(slideElt) {
+    document.querySelector(".features .feature:not([hidden])").hidden = true;
+    slideElt.hidden = false;
+  }
+
+  document.querySelector(".features .control.previous").addEventListener("click", function(event) {
+    event.preventDefault();
+    var previousElt = document.querySelector(".features .feature:not([hidden])").previousElementSibling;
+    if (previousElt == null) previousElt = document.querySelector(".features .spotlight").lastElementChild.previousElementSibling;
+    setupSlide(previousElt);
+  });
+
+  document.querySelector(".features .control.next").addEventListener("click", function(event) {
+    event.preventDefault();
+    var nextElt = document.querySelector(".features .feature:not([hidden])").nextElementSibling;
+    if (nextElt == null) nextElt = document.querySelector(".features .spotlight .feature");
+    setupSlide(nextElt);
+  });
+
+  setupSlide(document.querySelector(".features .feature"));

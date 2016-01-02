@@ -1,0 +1,43 @@
+extends layout/main.fr.jade
+
+block head
+  link(rel="stylesheet",href="index.css")
+
+block content
+  .logo
+    h1 Superpowers
+    .tagline La création de jeux 2D+3D pour tous. Gratuit et open source, <b>enfin</b>.
+
+  .news
+    h1 Dernières news et événements à venir
+
+    table
+      tr
+        th 29 - 31 Janvier 2016
+        td La <a href="http://globalgamejam.org/" target="_blank">Global Game Jam</a> arrive. Participez avec la communauté !
+      tr
+        th 7 Janvier 2016
+        td Superpowers est maintenant <i>open source</i>, la <a href="https://github.com/superpowers/superpowers/releases" target="_blank">v0.18</a> est sortie !
+
+  .aspects
+    div
+      img(src="images/artworks/theater.png")
+      .text Collaboration en temps réel
+
+    div
+      img(src="images/artworks/tools.png")
+      .text Outils puissants et intuitifs
+
+    div
+      img(src="images/artworks/movie-set.png")
+      .text Propulsé par TypeScript
+  
+  .features
+    a.control(href="#").previous
+      div ◀
+    .spotlight
+      include features.fr.jade
+    a.control(href="#").next
+      div ▶
+  
+  include layout/slideshow.jade

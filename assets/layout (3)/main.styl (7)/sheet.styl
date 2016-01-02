@@ -47,6 +47,8 @@ nav ul {
     color: #444;
     text-decoration: none;
     border-bottom: 2px solid transparent;
+    text-align: center;
+    white-space: nowrap;
   }
   
   a:hover {
@@ -79,6 +81,21 @@ main a, footer a {
 footer {
   padding: 1em;
   display: flex;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
+}
+
+footer .built-with-the-community {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .links {
+  margin-top: 1em;
+  opacity: 0.5;
+  font-size: smaller;
+  
+  a { color: inherit; }
 }

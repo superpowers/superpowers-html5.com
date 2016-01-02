@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Superpowers — Free 2D+3D game maker, open source
+    link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700",rel="stylesheet",type="text/css")
+    link(href="https://fonts.googleapis.com/css?family=Lato:400,700",rel="stylesheet",type="text/css")
+    link(rel="stylesheet",href="layout/main.css")
+    block head
+  body
+    .page
+      nav
+        include menu.en.jade
+
+      main
+        block content
+
+      footer
+        include footer.en.jade
