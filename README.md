@@ -1,6 +1,6 @@
 # superpowers-html5.com
 
-This is the source  project for Superpowers's official website.  
+This is the source  project for [Superpowers's official website](http://superpowers-html5.com/).  
 It is a static website built using Superpowers itself and hosted
 [on GitHub Pages](https://github.com/superpowers/superpowers-html5.com/tree/gh-pages).
 
