@@ -77,6 +77,11 @@
     "type": "jade"
   },
   {
+    "id": "38",
+    "name": "supporters",
+    "type": "jade"
+  },
+  {
     "id": "11",
     "name": "images",
     "type": null,
@@ -89,6 +94,11 @@
       {
         "id": "13",
         "name": "sparklin-labs-small",
+        "type": "blob"
+      },
+      {
+        "id": "39",
+        "name": "supporters",
         "type": "blob"
       },
       {
