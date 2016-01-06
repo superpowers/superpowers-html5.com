@@ -15,7 +15,7 @@ script.
   document.querySelector(".features .control.previous").addEventListener("click", function(event) {
     event.preventDefault();
     var previousElt = document.querySelector(".features .feature:not([hidden])").previousElementSibling;
-    if (previousElt == null) previousElt = document.querySelector(".features .spotlight").lastElementChild.previousElementSibling;
+    if (previousElt == null) previousElt = document.querySelector(".features .spotlight").lastElementChild;
     setupSlide(previousElt);
   });
 
