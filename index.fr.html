@@ -1,0 +1,43 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css"><link rel="stylesheet" href="layout/main.css"><title>Superpowers — Créer des jeux vidéo 2D+3D, open source et gratuit</title><link rel="stylesheet" href="index.css"></head><body><div class="page"><nav><ul><li class="home"><a href="index.html"><img src="images/superpowers-logo.png" width="48" height="48"></a></li><li><a href="https://sparklinlabs.itch.io/superpowers" target="_blank">Télécharger</a></li><li> <a href="http://docs.superpowers-html5.com/" target="_blank">Apprendre</a></li><li><a href="http://itch.io/engine/superpowers/community" target="_blank">Communauté</a></li><li><a href="http://itch.io/c/27733/games-made-with-superpowers" target="_blank">Jeux</a></li><li><a href="https://patreon.com/SparklinLabs" target="_blank">Patreon</a></li><li><a href="https://github.com/superpowers" target="_blank">Open Source</a></li></ul></nav><main><div class="logo"><h1>Superpowers</h1><div class="tagline">La création de jeux 2D+3D pour tous. Gratuit et open source, <b>enfin</b>.</div></div><div class="news"><h1>Dernières news et événements à venir</h1><table><tr><th>29 - 31 Janvier 2016</th><td>La <a href="http://globalgamejam.org/" target="_blank">Global Game Jam</a> arrive. Participez avec la communauté !</td></tr><tr><th>7 Janvier 2016</th><td>Superpowers est maintenant <i>open source</i>, la <a href="https://github.com/superpowers/superpowers/releases" target="_blank">v0.18</a> est sortie !</td></tr><tr><th>6 Janvier 2016</th><td>Nous sommes sur <a href="https://patreon.com/SparklinLabs" target="_blank">Patreon</a> ! Découvrez notre <a href="https://www.youtube.com/watch?v=-OHe1v1lBgA" target="_blank">vidéo de présentation</a>.</td></tr></table><p>Inscrivez-vous à <a href="https://sparklinlabs.us10.list-manage.com/subscribe/?u=112738380d07db71177353aac&id=8de36d77b7" target="_blank">la newsletter</a>
+pour les nouvelles importantes. Au plus un e-mail par mois.
+</p></div><div class="aspects"><div><img src="images/artworks/theater.png"><div class="text">Collaboration en temps réel</div></div><div><img src="images/artworks/tools.png"><div class="text">Outils puissants et intuitifs</div></div><div><img src="images/artworks/movie-set.png"><div class="text">Propulsé par TypeScript</div></div></div><div class="features"><a href="#" class="control previous"><div>◀</div></a><div class="spotlight"><div class="feature"><h1>Découvrez Superpowers</h1><img src="images/slides/tabbed-ui.png"><div class="info"><p>L'interface de Superpowers est familière et facile à prendre en main.<br>
+Jouez à notre jeu démo <a href="http://sparklinlabs.itch.io/discover-superpowers" target="_blank">Découverte de Superpowers</a>.
+</p></div></div><div hidden class="feature"><h1>Scriptez avec TypeScript</h1><img src="images/slides/typescript-editor.png"><div class="info"><p>L'éditeur TypeScript est bourré de fonctionnalités utiles : coloration syntaxique,<br>
+auto-complétion, rapport d'erreurs instantanés, saut à la définition et plus.
+</p></div></div><div hidden class="feature"><h1>Packs de ressources gratuits</h1><img src="images/slides/asset-packs.png"><div class="info"><p>Superpowers est livré avec des centaines d'éléments :<br>
+sprites, modèles 3D, effets sonors, polices et musique !<br>
+</p></div></div><div hidden class="feature"><h1>Publiez sur de nombreuses plateformes</h1><img src="images/slides/publish.png"><div class="info"><p>Les jeux Superpowers peuvent être publiés sur PC, Mac, Linux, iOS et Android.<br>
+Et bien sûr, ils fonctionnent dans les navigateurs Web récents !<br>
+</p></div></div><div hidden class="feature"><h1>Démos et projets exemples</h1><a href="https://github.com/superpowers-extra" target="_blank"><img src="images/slides/demo-projects.png"></a><div class="info"><p>Nous avons compilé une librairie de jeux pour vous lancer.<br>
+Téléchargez plein de projets prêts à l'emploi <a href="https://github.com/superpowers-extra" target="_blank">sur GitHub</a>.
+
+</p></div></div><div hidden class="feature"><h1>Soutenez-nous sur Patreon</h1><a href="https://patreon.com/SparklinLabs" target="_blank"><img src="images/slides/support-us.png"></a><div class="info"><p>Nous travaillons avec amour sur Superpowers depuis fin 2014.<br>
+Soutenez notre travail en souscrivant <a href="https://patreon.com/SparklinLabs" target="_blank">sur Patreon</a>. Merci ! :)</p></div></div></div><a href="#" class="control next"><div>▶</div></a></div><script>var slides = document.querySelectorAll(".features .feature");
+for (var i = 0; i < slides.length; i++) {
+  var numberElt = document.createElement("span");
+  numberElt.className = "number";
+  numberElt.textContent = "(" + (i + 1) + " / " + slides.length + ")";
+  slides[i].querySelector("h1").appendChild(numberElt);
+}
+
+function setupSlide(slideElt) {
+  document.querySelector(".features .feature:not([hidden])").hidden = true;
+  slideElt.hidden = false;
+}
+
+document.querySelector(".features .control.previous").addEventListener("click", function(event) {
+  event.preventDefault();
+  var previousElt = document.querySelector(".features .feature:not([hidden])").previousElementSibling;
+  if (previousElt == null) previousElt = document.querySelector(".features .spotlight").lastElementChild;
+  setupSlide(previousElt);
+});
+
+document.querySelector(".features .control.next").addEventListener("click", function(event) {
+  event.preventDefault();
+  var nextElt = document.querySelector(".features .feature:not([hidden])").nextElementSibling;
+  if (nextElt == null) nextElt = document.querySelector(".features .spotlight .feature");
+  setupSlide(nextElt);
+});
+
+setupSlide(document.querySelector(".features .feature"));</script></main><footer><div class="built-with-the-community"><img src="images/sparklin-labs-small.png"><div class="text">Initié par <a href="http://sparklinlabs.com/" target="_blank">Sparklin Labs</a><br>
+réalisé avec la communauté</div></div><div class="links"><a href="index.en.html">English</a> · <a href="index.fr.html">Français</a> — <a href="mailto:team@sparklinlabs.com">Contact</a> · <a href="supporters.html">Supporters</a></div></footer></div></body></html>

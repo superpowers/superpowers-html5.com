@@ -7,7 +7,7 @@ main {
 }
 main .logo {
   padding: 1em;
-  background: url("https://sparklinlabs.com/images/artwork.png") center bottom no-repeat;
+  background: url("images/artworks/cover.png") center bottom no-repeat;
   background-size: 75%;
   height: 520px;
   min-height: calc(350px - 2em);
@@ -19,31 +19,32 @@ main .logo h1 {
   font-weight: bold;
   font-family: "Lato";
 }
-main .slides {
-  margin: 1em 0;
+main .news {
   background: #ddd;
-  display: flex;
-  align-items: stretch;
+  text-align: center;
+  padding: 2em;
 }
-main .slides .previous,
-main .slides .next {
-  background: #ccc;
+main .news h1 {
+  margin-top: 0;
 }
-main .slides .slide:not([hidden]) {
-  padding: 1em;
-  flex: 1;
-  display: flex;
+main .news table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+main .news th,
+main .news td {
+  border: 1px solid #bbb;
+  padding: 0.5em;
+}
+main .news th {
+  text-align: right;
+}
+main .news td {
   text-align: left;
-}
-main .slides .info {
-  padding: 0 1em;
-}
-main .slides .info header {
-  font-size: 1.5em;
 }
 main .aspects {
   display: flex;
-  padding: 0 10vw;
+  padding: 1em 10vw;
   align-items: baseline;
 }
 main .aspects > div {
@@ -55,19 +56,62 @@ main .aspects > div img {
 main .aspects > div .text {
   text-align: center;
 }
-main .news {
-  text-align: left;
+main .features-toggle {
+  margin-top: 1em;
+  background: #ddd;
   padding: 1em;
 }
-main .news article header {
-  background: #fff;
+main .features {
+  margin-bottom: 1em;
+  background: #ddd;
+  display: flex;
+  align-items: stretch;
+}
+main .features a.control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5em;
+  font-size: 3.5em;
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.5;
+  background: #d0d0d0;
+}
+main .features a.control:hover {
+  opacity: 1;
+  cursor: pointer;
+  background: #ccc;
+}
+main .features a.control:active {
+  background: #666;
+  color: #ccc;
+}
+main .features .spotlight {
+  flex: 1;
+  padding: 1em;
+}
+main .features .spotlight h1 {
+  line-height: 1.5;
+  margin-top: 0;
+}
+main .features .spotlight h1 .number {
+  font-size: 0.5em;
+  padding-left: 0.5em;
+  color: #888;
+  font-weight: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+main .features .spotlight img {
+  max-width: 90%;
 }
 @media (max-width: 1000px) {
   main .logo {
     font-size: 0.75em;
   }
   main .aspects {
-    padding: 0 5vw;
+    padding: 1em 5vw;
   }
   main .slides .slide {
     flex-flow: column;
@@ -78,5 +122,13 @@ main .news article header {
   }
   main .slides .info {
     padding: 1em 0;
+  }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  main .logo .tagline {
+    font-size: 1.75em;
+  }
+  main .news table {
+    font-size: 1.5em;
   }
 }

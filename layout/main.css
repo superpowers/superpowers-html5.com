@@ -43,6 +43,8 @@ nav ul a {
   color: #444;
   text-decoration: none;
   border-bottom: 2px solid transparent;
+  text-align: center;
+  white-space: nowrap;
 }
 nav ul a:hover {
   background: #ccc;
@@ -65,17 +67,31 @@ nav li a {
 nav li.home a {
   padding: 0 1em;
 }
-main a {
+main a,
+footer a {
   color: #398ece;
 }
-main a:hover {
+main a:hover,
+footer a:hover {
   text-decoration: none;
 }
 footer {
-  margin-top: 2em;
   padding: 1em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .built-with-the-community {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ddd;
+}
+footer .links {
+  margin-top: 1em;
+  opacity: 0.5;
+  font-size: smaller;
+}
+footer .links a {
+  color: inherit;
 }
