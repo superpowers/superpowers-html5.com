@@ -166,5 +166,10 @@
         ]
       }
     ]
+  },
+  {
+    "id": "40",
+    "name": "favicon.ico",
+    "type": "blob"
   }
 ]
