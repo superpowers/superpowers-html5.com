@@ -22,7 +22,7 @@ main .logo h1 {
 main .download {
   padding: 1em;
   background: #444;
-  margin: 1em -1px;
+  margin: 1em -1px 0;
   color: #ccc;
   display: flex;
   justify-content: center;
