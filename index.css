@@ -53,7 +53,7 @@ main .download a:hover {
   background: #53bef5;
 }
 main .download a:active {
-  background: #000;
+  background: #666;
 }
 main .news {
   background: #ddd;
