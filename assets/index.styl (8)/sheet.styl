@@ -35,7 +35,7 @@ main .download {
   align-items: center;
   p { margin: 0 1em; text-align: left; }
 
-  a {
+  > a {
     display: flex;
     align-items: center;
     border: 2px solid #404040;
@@ -49,11 +49,9 @@ main .download {
     font-weight: bold;
     text-decoration: none;
   }
-  
-  a img { margin-right: 0.5em; }
-  
-  a:hover { background: #53bef5; }
-  a:active { background: #666; }
+  > a img { margin-right: 0.5em; }
+  > a:hover { background: #53bef5; }
+  > a:active { background: #666; }
 }
 
 main .news {
@@ -114,7 +112,15 @@ main .features {
   a.control:hover { opacity: 1; cursor: pointer; background: #ccc; }
   a.control:active { background: #666; color: #ccc; }
 
-  .spotlight { flex: 1; padding: 1em; }
+  .spotlight {
+    flex: 1;
+    padding: 1em;
+    
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .spotlight h1 { line-height: 1.5; margin-top: 0; }
   .spotlight h1 .number { font-size: 0.5em; padding-left: 0.5em; color: #888; font-weight: normal; white-space: nowrap; vertical-align: middle; }
   .spotlight img { max-width: 90%; }
