@@ -32,7 +32,7 @@ main .download p {
   margin: 0 1em;
   text-align: left;
 }
-main .download a {
+main .download > a {
   display: flex;
   align-items: center;
   border: 2px solid #404040;
@@ -46,13 +46,13 @@ main .download a {
   font-weight: bold;
   text-decoration: none;
 }
-main .download a img {
+main .download > a img {
   margin-right: 0.5em;
 }
-main .download a:hover {
+main .download > a:hover {
   background: #53bef5;
 }
-main .download a:active {
+main .download > a:active {
   background: #666;
 }
 main .news {
@@ -126,6 +126,10 @@ main .features a.control:active {
 main .features .spotlight {
   flex: 1;
   padding: 1em;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 main .features .spotlight h1 {
   line-height: 1.5;
