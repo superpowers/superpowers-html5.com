@@ -92,6 +92,11 @@
         "type": "blob"
       },
       {
+        "id": "41",
+        "name": "download",
+        "type": "blob"
+      },
+      {
         "id": "13",
         "name": "sparklin-labs-small",
         "type": "blob"
@@ -164,11 +169,6 @@
             "type": "blob"
           }
         ]
-      },
-      {
-        "id": "41",
-        "name": "download",
-        "type": "blob"
       }
     ]
   },
