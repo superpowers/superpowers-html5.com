@@ -78,6 +78,12 @@ main .news th {
 main .news td {
   text-align: left;
 }
+main .news tr.upcoming {
+  color: #888;
+}
+main .news tr.upcoming a {
+  color: #78a9ce;
+}
 main .aspects {
   display: flex;
   padding: 1em 10vw;
