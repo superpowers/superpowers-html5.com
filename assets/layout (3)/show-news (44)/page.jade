@@ -1,0 +1,8 @@
+script.
+  var newsDiv = document.querySelector(".news");
+  var showNewsLink = document.getElementById("show-all-news-items");
+  showNewsLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    newsDiv.classList.add("show-all");
+    showNewsLink.hidden = true;
+  });

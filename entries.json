@@ -43,6 +43,11 @@
         "id": "32",
         "name": "slideshow",
         "type": "jade"
+      },
+      {
+        "id": "44",
+        "name": "show-news",
+        "type": "jade"
       }
     ]
   },
