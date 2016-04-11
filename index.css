@@ -84,6 +84,9 @@ main .news tr.upcoming {
 main .news tr.upcoming a {
   color: #78a9ce;
 }
+main .news:not(.show-all) tr:nth-child(n+6) {
+  display: none;
+}
 main .aspects {
   display: flex;
   padding: 1em 10vw;
