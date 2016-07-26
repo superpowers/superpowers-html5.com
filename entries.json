@@ -1,195 +1,198 @@
-[
-  {
-    "id": "3",
-    "name": "layout",
-    "type": null,
-    "children": [
-      {
-        "id": "7",
-        "name": "main.styl",
-        "type": "stylus"
-      },
-      {
-        "id": "0",
-        "name": "main.en.jade",
-        "type": "jade"
-      },
-      {
-        "id": "35",
-        "name": "main.fr.jade",
-        "type": "jade"
-      },
-      {
-        "id": "2",
-        "name": "menu.en",
-        "type": "jade"
-      },
-      {
-        "id": "37",
-        "name": "menu.fr",
-        "type": "jade"
-      },
-      {
-        "id": "34",
-        "name": "footer.en",
-        "type": "jade"
-      },
-      {
-        "id": "36",
-        "name": "footer.fr",
-        "type": "jade"
-      },
-      {
-        "id": "32",
-        "name": "slideshow",
-        "type": "jade"
-      },
-      {
-        "id": "44",
-        "name": "show-news",
-        "type": "jade"
-      }
-    ]
-  },
-  {
-    "id": "8",
-    "name": "index.styl",
-    "type": "stylus"
-  },
-  {
-    "id": "22",
-    "name": "index.jade",
-    "type": "jade"
-  },
-  {
-    "id": "1",
-    "name": "index.en",
-    "type": "jade"
-  },
-  {
-    "id": "42",
-    "name": "news.en",
-    "type": "jade"
-  },
-  {
-    "id": "26",
-    "name": "features.en",
-    "type": "jade"
-  },
-  {
-    "id": "23",
-    "name": "index.fr",
-    "type": "jade"
-  },
-  {
-    "id": "43",
-    "name": "news.fr",
-    "type": "jade"
-  },
-  {
-    "id": "33",
-    "name": "features.fr",
-    "type": "jade"
-  },
-  {
-    "id": "38",
-    "name": "supporters",
-    "type": "jade"
-  },
-  {
-    "id": "11",
-    "name": "images",
-    "type": null,
-    "children": [
-      {
-        "id": "14",
-        "name": "superpowers-logo",
-        "type": "blob"
-      },
-      {
-        "id": "41",
-        "name": "download",
-        "type": "blob"
-      },
-      {
-        "id": "13",
-        "name": "sparklin-labs-small",
-        "type": "blob"
-      },
-      {
-        "id": "39",
-        "name": "supporters",
-        "type": "blob"
-      },
-      {
-        "id": "15",
-        "name": "artworks",
-        "type": null,
-        "children": [
-          {
-            "id": "12",
-            "name": "cover",
-            "type": "blob"
-          },
-          {
-            "id": "16",
-            "name": "theater",
-            "type": "blob"
-          },
-          {
-            "id": "17",
-            "name": "tools",
-            "type": "blob"
-          },
-          {
-            "id": "18",
-            "name": "movie-set",
-            "type": "blob"
-          }
-        ]
-      },
-      {
-        "id": "19",
-        "name": "slides",
-        "type": null,
-        "children": [
-          {
-            "id": "20",
-            "name": "tabbed-ui",
-            "type": "blob"
-          },
-          {
-            "id": "27",
-            "name": "typescript-editor",
-            "type": "blob"
-          },
-          {
-            "id": "28",
-            "name": "asset-packs",
-            "type": "blob"
-          },
-          {
-            "id": "29",
-            "name": "publish",
-            "type": "blob"
-          },
-          {
-            "id": "31",
-            "name": "demo-projects",
-            "type": "blob"
-          },
-          {
-            "id": "30",
-            "name": "support-us",
-            "type": "blob"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "40",
-    "name": "favicon.ico",
-    "type": "blob"
-  }
-]
+{
+  "nextEntryId": 45,
+  "nodes": [
+    {
+      "id": "3",
+      "name": "layout",
+      "type": null,
+      "children": [
+        {
+          "id": "7",
+          "name": "main.styl",
+          "type": "stylus"
+        },
+        {
+          "id": "0",
+          "name": "main.en.jade",
+          "type": "jade"
+        },
+        {
+          "id": "35",
+          "name": "main.fr.jade",
+          "type": "jade"
+        },
+        {
+          "id": "2",
+          "name": "menu.en",
+          "type": "jade"
+        },
+        {
+          "id": "37",
+          "name": "menu.fr",
+          "type": "jade"
+        },
+        {
+          "id": "34",
+          "name": "footer.en",
+          "type": "jade"
+        },
+        {
+          "id": "36",
+          "name": "footer.fr",
+          "type": "jade"
+        },
+        {
+          "id": "32",
+          "name": "slideshow",
+          "type": "jade"
+        },
+        {
+          "id": "44",
+          "name": "show-news",
+          "type": "jade"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "index.styl",
+      "type": "stylus"
+    },
+    {
+      "id": "22",
+      "name": "index.jade",
+      "type": "jade"
+    },
+    {
+      "id": "1",
+      "name": "index.en",
+      "type": "jade"
+    },
+    {
+      "id": "42",
+      "name": "news.en",
+      "type": "jade"
+    },
+    {
+      "id": "26",
+      "name": "features.en",
+      "type": "jade"
+    },
+    {
+      "id": "23",
+      "name": "index.fr",
+      "type": "jade"
+    },
+    {
+      "id": "43",
+      "name": "news.fr",
+      "type": "jade"
+    },
+    {
+      "id": "33",
+      "name": "features.fr",
+      "type": "jade"
+    },
+    {
+      "id": "38",
+      "name": "supporters",
+      "type": "jade"
+    },
+    {
+      "id": "11",
+      "name": "images",
+      "type": null,
+      "children": [
+        {
+          "id": "14",
+          "name": "superpowers-logo",
+          "type": "blob"
+        },
+        {
+          "id": "41",
+          "name": "download",
+          "type": "blob"
+        },
+        {
+          "id": "13",
+          "name": "sparklin-labs-small",
+          "type": "blob"
+        },
+        {
+          "id": "39",
+          "name": "supporters",
+          "type": "blob"
+        },
+        {
+          "id": "15",
+          "name": "artworks",
+          "type": null,
+          "children": [
+            {
+              "id": "12",
+              "name": "cover",
+              "type": "blob"
+            },
+            {
+              "id": "16",
+              "name": "theater",
+              "type": "blob"
+            },
+            {
+              "id": "17",
+              "name": "tools",
+              "type": "blob"
+            },
+            {
+              "id": "18",
+              "name": "movie-set",
+              "type": "blob"
+            }
+          ]
+        },
+        {
+          "id": "19",
+          "name": "slides",
+          "type": null,
+          "children": [
+            {
+              "id": "20",
+              "name": "tabbed-ui",
+              "type": "blob"
+            },
+            {
+              "id": "27",
+              "name": "typescript-editor",
+              "type": "blob"
+            },
+            {
+              "id": "28",
+              "name": "asset-packs",
+              "type": "blob"
+            },
+            {
+              "id": "29",
+              "name": "publish",
+              "type": "blob"
+            },
+            {
+              "id": "31",
+              "name": "demo-projects",
+              "type": "blob"
+            },
+            {
+              "id": "30",
+              "name": "support-us",
+              "type": "blob"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "name": "favicon.ico",
+      "type": "blob"
+    }
+  ]
+}
