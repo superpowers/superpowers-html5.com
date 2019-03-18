@@ -6,7 +6,7 @@ It is a static website built using Superpowers itself and hosted
 
 ## How to contribute
 
-The [Superpowers Web](http://github.com/superpowers/superpowers-web) system uses [Jade](http://jade-lang.com/) for HTML and [Stylus](http://stylus-lang.com/) for stylesheets.
+The [Superpowers Web](http://github.com/superpowers/superpowers-web) system uses [Pug](http://pugjs.com/) for HTML and [Stylus](http://stylus-lang.com/) for stylesheets.
 
 For now, you'll need to build it from source. See [Building Superpowers](http://docs.sparklinlabs.com/en/development/building-superpowers).
 

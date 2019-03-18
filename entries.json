@@ -13,43 +13,43 @@
         },
         {
           "id": "0",
-          "name": "main.en.jade",
-          "type": "jade"
+          "name": "main.en",
+          "type": "pug"
         },
         {
           "id": "35",
-          "name": "main.fr.jade",
-          "type": "jade"
+          "name": "main.fr",
+          "type": "pug"
         },
         {
           "id": "2",
           "name": "menu.en",
-          "type": "jade"
+          "type": "pug"
         },
         {
           "id": "37",
           "name": "menu.fr",
-          "type": "jade"
+          "type": "pug"
         },
         {
           "id": "34",
           "name": "footer.en",
-          "type": "jade"
+          "type": "pug"
         },
         {
           "id": "36",
           "name": "footer.fr",
-          "type": "jade"
+          "type": "pug"
         },
         {
           "id": "32",
           "name": "slideshow",
-          "type": "jade"
+          "type": "pug"
         },
         {
           "id": "44",
           "name": "show-news",
-          "type": "jade"
+          "type": "pug"
         }
       ]
     },
@@ -60,43 +60,43 @@
     },
     {
       "id": "22",
-      "name": "index.jade",
-      "type": "jade"
+      "name": "index.pug",
+      "type": "pug"
     },
     {
       "id": "1",
       "name": "index.en",
-      "type": "jade"
+      "type": "pug"
     },
     {
       "id": "42",
       "name": "news.en",
-      "type": "jade"
+      "type": "pug"
     },
     {
       "id": "26",
       "name": "features.en",
-      "type": "jade"
+      "type": "pug"
     },
     {
       "id": "23",
       "name": "index.fr",
-      "type": "jade"
+      "type": "pug"
     },
     {
       "id": "43",
       "name": "news.fr",
-      "type": "jade"
+      "type": "pug"
     },
     {
       "id": "33",
       "name": "features.fr",
-      "type": "jade"
+      "type": "pug"
     },
     {
       "id": "38",
       "name": "supporters",
-      "type": "jade"
+      "type": "pug"
     },
     {
       "id": "11",
